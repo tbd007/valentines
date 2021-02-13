@@ -1,0 +1,163 @@
+.wrap {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	top: 50px;
+	right: 10px;
+	height: 80vh;
+	text-align: center;
+	overflow: visible;
+	z-index: 10000;
+	display: flex;
+	box-shadow: 2px 2px 10px gray;
+}
+
+.wrap:before {
+	background: inherit no-repeat top left fixed;
+	background-size: cover;
+	width: 110%;
+	height: 110%;
+	position: absolute;
+	left: -5%;
+	top: -5%;
+	content: "";
+	z-index: 50;
+	filter: blur(15px);
+	display: block;
+}
+.wrap:after {
+	border-bottom: 1px solid;
+	border-top: 1px solid;
+	border-color: #ccc;
+	border-color: rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.303);
+	box-shadow: inset -10px 6px 5px rgba(243, 243, 243, 0.113),
+		inset 10px -6px 5px rgba(237, 237, 237, 0.186);
+	z-index: 75;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	content: "";
+}
+
+.wrap .content {
+	z-index: 100;
+	position: relative;
+}
+
+.img {
+	margin-left: -80px;
+	margin-top: 100px;
+	z-index: 8000;
+	transform: scale(1.1);
+}
+
+.cup {
+	position: absolute;
+	margin-top: -104px;
+	left: 39%;
+	width: 380px;
+	z-index: -7000;
+	transform: rotate(-18deg);
+}
+
+.imgwrap {
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 1000;
+	position: relative;
+	height: 101%;
+}
+
+.body {
+	background: linear-gradient(
+			to left,
+			rgba(85, 147, 194, 0.251),
+			rgba(148, 164, 236, 0.678),
+			rgba(129, 183, 214, 0.886),
+			rgba(122, 189, 228, 0.886),
+			rgba(252, 202, 211, 0.699),
+			rgba(252, 202, 211, 0.449),
+			rgba(171, 224, 248, 0.084),
+			rgba(202, 235, 248, 0.05),
+			rgba(90, 195, 252, 0.015)
+		),
+		url("back8.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 96vh;
+	width: 98%;
+	margin: 0 auto;
+
+	overflow: hidden;
+}
+
+.text {
+	z-index: 20000;
+	padding-right: 10px !important;
+	width: 60%;
+}
+
+h2,
+h3 {
+	font-family: "Codystar";
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	font-size: 22px;
+	text-shadow: 7px 4px 12px rgb(46, 50, 80);
+}
+
+h3 {
+	text-align: right;
+	margin-right: 130px;
+
+	text-transform: uppercase;
+	font-size: 19px;
+}
+
+.btn {
+	padding: 12px 25px;
+	font-family: "Codystar";
+	border-radius: 15px;
+	border: none;
+	background: rgb(247, 169, 186);
+	box-shadow: inset -4px 4px 10px rgb(238, 221, 236),
+		inset 4px -4px 10px rgb(173, 137, 172);
+	color: white;
+	font-weight: bolder;
+	font-size: 22px;
+	text-shadow: 2px 2px 16px rgb(31, 34, 49);
+}
+
+h1 {
+	font-family: "Pacifico";
+	color: rgb(247, 169, 186);
+	font-size: 70px;
+	transform: rotate(-10deg);
+	text-shadow: 4px 4px 6px rgb(90, 90, 90);
+	margin-top: 45px;
+	margin-right: 20px;
+	font-weight: bolder;
+}
+
+.cupshadow {
+	border-radius: 90px 90px;
+	height: 17px;
+	width: 160px;
+
+	background: radial-gradient(
+		rgba(87, 87, 87, 0.119),
+		rgba(162, 162, 162, 0.211),
+		rgba(234, 241, 255, 0.41),
+		rgba(188, 188, 188, 0.168),
+		transparent
+	);
+	z-index: -400;
+	position: absolute;
+	top: 83%;
+	left: 80%;
+	transform: rotate(-1deg);
+}
